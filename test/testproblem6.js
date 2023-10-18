@@ -52,4 +52,3 @@ const getBMWandAudiCars = require('../problem6.js');
 
 const selectedCars = getBMWandAudiCars(inventory);
 console.log('BMW and Audi cars:', JSON.stringify(selectedCars, null, 2));
-

@@ -48,11 +48,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":48,"car_make":"Dodge","car_model":"Magnum","car_year":2008},
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
-function getallcaryear() {
-  const caryears = [];
-  for (let i = 0; i < inventory.length; i++) {
-    caryears.push(inventory[i].car_year);
-  }
-  return caryears;
-}
-export{inventory,getallcaryear};
+const getallcaryear = require('../problem4.js');
+const caryears = getallcaryear(inventory);
+console.log('Car years array:', caryears);
+

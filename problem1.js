@@ -8,4 +8,3 @@ function getCarById(id , inventory) {
 }
 
 module.exports = getCarById
- 

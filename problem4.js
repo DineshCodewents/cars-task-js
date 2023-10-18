@@ -4,5 +4,5 @@ function getallcaryear(inventory) {
       caryears.push(inventory[i].car_year);
     }
     return caryears;
-  }
+}
   module.exports= getallcaryear

@@ -1,3 +1,8 @@
-import {getallcaryear} from './testproblem4.js';
-const caryears = getallcaryear();
-console.log('Car years array:', caryears);
+function getallcaryear(inventory) {
+    const caryears = [];
+    for (let i = 0; i < inventory.length; i++) {
+      caryears.push(inventory[i].car_year);
+    }
+    return caryears;
+  }
+  module.exports= getallcaryear

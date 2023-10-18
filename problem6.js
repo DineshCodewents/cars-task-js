@@ -1,4 +1,10 @@
-import {getBMWandAudiCars} from './testproblem6.mjs';
-
-const selectedCars = getBMWandAudiCars();
-console.log('BMW and Audi cars:', JSON.stringify(selectedCars, null, 2));
+function getBMWandAudiCars(inventory) {
+    const BMWAndAudiCars = [];
+    for (let i = 0; i < inventory.length; i++) {
+      if (inventory[i].car_make === 'BMW' || inventory[i].car_make === 'Audi') {
+        BMWAndAudiCars.push(inventory[i]);
+      }
+    }
+    return BMWAndAudiCars;
+  }
+module.exports= getBMWandAudiCars

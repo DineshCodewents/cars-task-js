@@ -1,7 +1,9 @@
-import { findlastCar } from './problem2.js';
-
-const lastcar = findlastCar();
-if (lastcar) {
-  const { car_make, car_model } = lastcar;
-  console.log(`Last car is a ${car_make} ${car_model}`);
-}
+module.exports = function(inventory) {
+  let lastcar = inventory[0];
+  for (let i = 1; i < inventory.length; i++) {
+    if (inventory[i].id > lastcar.id) {
+      lastcar = inventory[i];
+    }
+  }
+  return lastcar;
+};

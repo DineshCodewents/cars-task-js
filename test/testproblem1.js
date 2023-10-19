@@ -48,14 +48,11 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":48,"car_make":"Dodge","car_model":"Magnum","car_year":2008},
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
-
-const problem1 = require('../problem1.js');
+const getCarById = require('../problem1.js');
 const carId = 33;
-const car = problem1(carId , inventory);
 
-if (car) {
+  const car = getCarById(carId, inventory);
   const { car_year, car_make, car_model } = car;
   console.log(`Car ${carId} is a ${car_year} ${car_make} ${car_model}`);
-} else {
-  console.log(`Car with ID ${carId} not found in the inventory`);
-}
+
+

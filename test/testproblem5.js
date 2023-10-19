@@ -48,11 +48,8 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":48,"car_make":"Dodge","car_model":"Magnum","car_year":2008},
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
-const getallcar = require('../problem5.js').getallcar;
-const getolder = require('../problem5.js').getolder;
+const getOlderCars = require('../problem5.js');
+const olderCars = getOlderCars(inventory);
+console.log('Older cars:', olderCars);
 
-const caryearsarray = getallcar(inventory);
-const oldercararray = getolder(caryearsarray);
 
-console.log('Older cars array:', oldercararray);
-console.log('Number of cars older than 2000:', oldercararray.length);

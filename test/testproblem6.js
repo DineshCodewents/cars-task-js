@@ -48,7 +48,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":48,"car_make":"Dodge","car_model":"Magnum","car_year":2008},
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
-const getBMWandAudiCars = require('../problem6.js');
+const getBMWAndAudiCars = require('../problem6.js');
 
-const selectedCars = getBMWandAudiCars(inventory);
-console.log('BMW and Audi cars:', JSON.stringify(selectedCars, null, 2));
+const selectedCars = getBMWAndAudiCars(inventory);
+console.log('BMW and Audi cars:', JSON.stringify(selectedCars));

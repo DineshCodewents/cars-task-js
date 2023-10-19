@@ -48,6 +48,6 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 {"id":48,"car_make":"Dodge","car_model":"Magnum","car_year":2008},
 {"id":49,"car_make":"Chrysler","car_model":"Sebring","car_year":1996},
 {"id":50,"car_make":"Lincoln","car_model":"Town Car","car_year":1999}];
-const sortcar = require('../problem3.js');
-const sortedCarModels = sortcar(inventory);
+const sortCar = require('../problem3.js');
+const sortedCarModels = sortCar(inventory);
 console.log(sortedCarModels);

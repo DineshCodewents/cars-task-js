@@ -51,7 +51,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 const findLastCar = require('../problem2.js');
 
-const lastcar = findLastCar(inventory);
+const lastCar = findLastCar(inventory);
 
-  const { car_make, car_model } = lastcar;
+  const { car_make, car_model } = lastCar;
   console.log(`Last car is a ${car_make} ${car_model}`);

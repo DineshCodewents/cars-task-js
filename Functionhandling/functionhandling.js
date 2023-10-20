@@ -17,4 +17,5 @@ function validateInventory(inventory) {
     return inventory;
   }
 
+  
   module.exports= validateInventory;

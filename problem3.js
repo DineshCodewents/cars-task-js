@@ -2,7 +2,7 @@ const validateInventory = require('../functionHandling/functionHandling');
 function sortCar(inventory) {
     try {
         validateInventory(inventory);
-        const sortedInventory = inventory
+        const sortedInventory = inventory.map(car => car)
             .sort((a, b) => a.car_model.toLowerCase().localeCompare(b.car_model.toLowerCase()));
         return sortedInventory;
     } catch (error) {

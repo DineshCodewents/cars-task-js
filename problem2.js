@@ -1,4 +1,4 @@
-const validateInventory = require('./functionHandling/functionHandling');
+const validateInventory = require('../functionHandling/functionHandling');
 function findLastCar(inventory) {
   try {
     const validatedInventory = validateInventory(inventory);
